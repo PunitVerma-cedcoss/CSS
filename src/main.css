@@ -1,0 +1,46 @@
+* {
+  transition: 0.3s all ease;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.s1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.s1 div {
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.s1 div:hover {
+  transform: scale(1.05);
+  background-color: red !important;
+}
+.s1 div:nth-child(odd) {
+  background-color: deeppink;
+}
+.s1 div:nth-child(even) {
+  background-color: blue;
+}
+.s1 div:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+.s1 div:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+.s1 div:nth-child(4)::after {
+  content: "FLIX";
+}
+
+.s1 div:nth-child(4):hover::after {
+  content: "FLEX";
+}
