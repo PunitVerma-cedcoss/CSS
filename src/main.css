@@ -1,6 +1,6 @@
-:root{
-    --primary:deeppink;
-    --secondary:blue;
+:root {
+  --primary: deeppink;
+  --secondary: blue;
 }
 * {
   transition: 0.3s all ease;
@@ -8,7 +8,8 @@
 body {
   font-family: "Courier New", Courier, monospace;
 }
-.s1,.s2 {
+.s1,
+.s2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,27 +51,47 @@ body {
 }
 
 /* section 2 */
-.s2 button::after{
-    content: "Button";
+.s2 button::after {
+  content: "Button";
 }
-.s2 button:not(:last-child){
-    margin-right: 10px;
+.s2 button:not(:last-child) {
+  margin-right: 10px;
 }
-.s2 button{
-    border: none;
-    padding: 10px 20px 10px 20px;
-    color: white;
-    cursor: pointer;
+.s2 button {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
 }
-.s2 button:nth-child(odd){
-    background-color: var(--primary);
+.s2 button:nth-child(odd) {
+  background-color: var(--primary);
 }
-.s2 button:nth-child(even){
-    background-color: var(--secondary);
+.s2 button:nth-child(even) {
+  background-color: var(--secondary);
 }
-.s2 button:nth-child(odd):hover{
-    background-color: var(--secondary);
+.s2 button:nth-child(odd):hover {
+  background-color: var(--secondary);
 }
-.s2 button:nth-child(even):hover{
-    background-color: var(--primary);
+.s2 button:nth-child(even):hover {
+  background-color: var(--primary);
+}
+
+/* navbar */
+nav {
+  background-color: rgb(48, 44, 44);
+  color: white;
+  display: flex;
+}
+nav div {
+  padding: 10px;
+  border-right: 2px solid white;
+}
+nav div:not(:nth-child(4)):hover {
+  background-color: deeppink;
+  cursor: pointer;
+  transform: scale(1.05);
+  border-right: 2px solid white;
+}
+.grow {
+  flex-grow: 1;
 }
