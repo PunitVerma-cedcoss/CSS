@@ -4,6 +4,7 @@
 }
 * {
   transition: 0.3s all ease;
+  outline: none;
 }
 body {
   font-family: "Courier New", Courier, monospace;
@@ -236,4 +237,72 @@ table tbody td:nth-child(1) {
 table tbody tr:hover {
   background-color: rgb(37, 36, 36);
   cursor: pointer;
+}
+/* calculator ui */
+.s6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc {
+  width: 25%;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(165, 153, 153);
+  border-radius: 10px;
+  /* padding: 5px; */
+}
+.buttons button{
+    background-color: transparent;
+    border: 0.1px solid white;
+}
+.clear_btn {
+  grid-column: 1 / span 2;
+}
+.screen {
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  height: 100px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.screen input {
+  border-radius: 10px 0px 0px 0px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: deeppink;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.555);
+}
+.calcbtn {
+  border: 0;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.calcbtn:hover {
+  background-color: deeppink;
+  color: white;
+  cursor: pointer;
+}
+.buttons button:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+.buttons button:nth-child(2) {
+  border-top-right-radius: 10px;
+}
+.buttons button:nth-child(12) {
+  border-bottom-left-radius: 10px;
+}
+.buttons button:nth-child(14) {
+  border-bottom-right-radius: 10px;
 }
