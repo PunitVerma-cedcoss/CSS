@@ -95,3 +95,107 @@ nav div:not(:nth-child(4)):hover {
 .grow {
   flex-grow: 1;
 }
+
+/* drop-down sections */
+.s4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.s4 .dropdown:not(:last-child) {
+  margin-right: 20px;
+}
+/* DROP DOWN TYPE 1     */
+.dropdown {
+  position: relative;
+  width: 120px;
+  background-color: deeppink;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+.dropdown:hover {
+  background-color: black;
+}
+.dd-content {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  width: 100%;
+  /* display: none; */
+  transform: rotateX(90deg);
+  margin-top: 10px;
+}
+.dd-item {
+  padding: 10px;
+}
+.dd-item:hover {
+  cursor: pointer;
+  background-color: rgb(32, 32, 32);
+}
+.dropdown:hover > .dd-content {
+  /* display: block; */
+  transform: rotateX(0deg);
+}
+
+/* dropdown type 2 config */
+.type2 {
+  background-color: black;
+}
+.type2,
+.type2-content,
+.type2-content div {
+  border-radius: 10px;
+}
+.type2 div:hover {
+  border-radius: 10px;
+}
+.type2-content {
+  margin-top: 15px;
+}
+/* .type2-content div:nth-child(odd){
+    background-color: rgb(32, 32, 32);
+} */
+/* TYPE 3 CONFIG */
+/* dropdown type 2 config */
+.type3 {
+  background-color: black;
+}
+.type3,
+.type3-content,
+.type3-content div {
+  border-radius: 10px;
+}
+.type3 div:hover {
+  border-radius: 10px;
+}
+.type3-content {
+  margin-top: 15px;
+  transform: rotateY(90deg) skewX(12deg);
+}
+.dropdown:hover > .dd-content {
+  /* display: block; */
+  transform: rotateY(0deg) skewX(0deg);
+}
+
+/* DROPDOWN TYPE 4 */
+.type4 {
+  background-color: black;
+}
+.type4,
+.type4-content,
+.type4-content div {
+  border-radius: 10px;
+}
+.type4 div:hover {
+  border-radius: 10px;
+}
+.type4-content {
+  margin-top: 15px;
+  transform: rotateY(90deg);
+}
+.dropdown:hover > .dd-content {
+  /* display: block; */
+  transform: rotateY(0deg);
+}
